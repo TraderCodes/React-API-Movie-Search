@@ -21,7 +21,7 @@ const AppProvider = ({ children }) => {
             setMovies(data.Search);
             setError({ show: false, msg: '' });
          } else {
-            setError({ show: false, msg: data.error });
+            setError({ show: true, msg: data.Error });
          }
          setLoading(false);
       } catch (error) {
